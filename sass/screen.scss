@@ -203,7 +203,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   color:#dae2e8;
 }
 //player styles
-.flowplayer {width: 746px; height: 555px;}
+.flowplayer {width: 746px; height: 420px;}
 
 //metcast
 .metcast__content{@include vCtr;}
@@ -236,7 +236,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 
 .bg-tv{
   background: url(../images/bg-tv.png);
-  width:923px;height: 885px;
+  width:923px;height: 747px;
   position: relative;
   margin: 0 auto 70px;
   &:before{
@@ -255,7 +255,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   right: 60px;
   bottom:60px;
   height: 110px;
-  width:485px;
+  width:482px;
 }
 .tv__quality{
   position: absolute;

@@ -695,7 +695,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 /* line 206, ../sass/screen.scss */
 .flowplayer {
   width: 746px;
-  height: 555px;
+  height: 420px;
 }
 
 /* line 209, ../sass/screen.scss */
@@ -742,7 +742,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 .bg-tv {
   background: url(../images/bg-tv.png);
   width: 923px;
-  height: 885px;
+  height: 747px;
   position: relative;
   margin: 0 auto 70px;
 }
@@ -766,7 +766,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   right: 60px;
   bottom: 60px;
   height: 110px;
-  width: 485px;
+  width: 482px;
 }
 
 /* line 260, ../sass/screen.scss */
