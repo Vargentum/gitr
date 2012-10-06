@@ -22,10 +22,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.53294677">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="106" column="36" selection-start="6496" selection-end="6496" vertical-scroll-proportion="-7.095238">
+                <state line="104" column="22" selection-start="6280" selection-end="6280" vertical-scroll-proportion="0.2918239">
                   <folding>
                     <element signature="tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                     <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -35,10 +35,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/screen.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="16" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.5125448">
+                <state line="43" column="16" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -51,7 +51,7 @@
           <file leaf-file-name="screen.scss" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/screen.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="247" column="14" selection-start="5069" selection-end="5069" vertical-scroll-proportion="0.67407405">
+                <state line="134" column="14" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.5913978">
                   <folding />
                 </state>
               </provider>
@@ -342,7 +342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="36" selection-start="6496" selection-end="6496" vertical-scroll-proportion="-7.095238">
+        <state line="104" column="22" selection-start="6280" selection-end="6280" vertical-scroll-proportion="0.2918239">
           <folding>
             <element signature="tag#div#0;tag#div#1;tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -353,7 +353,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="247" column="14" selection-start="5069" selection-end="5069" vertical-scroll-proportion="0.67407405">
+        <state line="134" column="14" selection-start="3011" selection-end="3011" vertical-scroll-proportion="0.5913978">
           <folding />
         </state>
       </provider>
