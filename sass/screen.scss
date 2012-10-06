@@ -1,0 +1,294 @@
+@charset "utf-8";
+@import "compass/reset";
+
+@import "h5bp";
+@include h5bp-display;
+@include h5bp-selection;
+@include h5bp-chromeframe;
+@include h5bp-media;
+@include h5bp-base;
+@include h5bp-typography;
+@include h5bp-figures;
+@include h5bp-forms;
+@include h5bp-embeds;
+@include h5bp-tables;
+//@include h5bp-links;
+//@include h5bp-lists;
+@include h5bp-helpers;
+
+@import "compass/layout";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+
+
+//border-box-sizing for all elems
+*{@include box-sizing(border-box);}
+input[type=search]{@include box-sizing(border-box);}
+
+@import "sprites/indicator_stages/*.png";
+/*VARIABLES
+--------------------------------------------*/
+//set liks color here
+$linkDefaultColor:#b53228;
+$linkHoverColor:#b53228;
+$linkActiveColor:#b53228;
+$linkVisitedColor:#b53228;
+$linkFocusedColor:#b53228;
+//base font params--------------------
+$baseFontFamily: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+$baseFontColor: #fff;
+$baseFontSize:14px;
+$baseLineHeight: 1.4;
+//layout params-----------------------
+$baseWidth: 920px;
+
+/*HELPER CLASSES
+---------------------------------------------------------*/
+@mixin layout{
+  .l-baseWrap{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto;
+    width: $baseWidth
+  }
+}
+//content editing zone styles
+@mixin contentEditable{}
+.contentEditable{@include contentEditable;}
+//hack for ie9 - need for gradient backgrounds
+:root .gradient {filter: none \0/IE9; }
+//floats
+.-f_lt{float: left;}
+.-f_rt{float: right;}
+//pseudo elems mixin
+@mixin pseudoBlockAbs{
+  content: '';
+  display: block;
+  position: absolute;
+}
+//vertical centering mixin
+@mixin vCtr{
+  display: table-cell;
+  height: inherit;
+  vertical-align: middle;
+}
+//for horisontal layouts
+@mixin hList{
+  .flexbox &{@include display-box;}
+  .no-flexbox & > *{
+    @include inline-block;
+    vertical-align: top;
+  }
+}
+//img wrapper
+@mixin imgWrap{
+  img{width:100%;height: 100%;}
+}
+
+/*OBJECTS mixins
+--------------------------------------------*/
+/*LAYOUT
+----------------------------------------------------------*/
+html, button, input, select, textarea {
+  height: 100%;
+  font-family: $baseFontFamily;
+  color: $baseFontColor;
+}
+body {
+  height: 100%;
+  font-size: $baseFontSize;
+  line-height: $baseLineHeight;
+  @include layout;
+  background: url(../images/bg-page.jpg);
+}
+a {
+  @include link-colors($linkDefaultColor, $linkHoverColor, $linkActiveColor, $linkVisitedColor, $linkFocusedColor);
+  @include single-transition(all,.4s,ease,0s);
+  &.current{color:$linkHoverColor;}
+}
+input[type=number]{width:40px; text-align: center;}
+input[type=text],textarea{width:380px;}
+input[type=text]{height: 25px;}
+
+
+//slider styles
+.lof-main-outer{
+  width: 746px;
+  margin:auto;
+}
+ul.lof-main-wapper{
+  margin-top: 85px;
+  li{
+    img{display: none;}
+  }
+
+}
+/* item navigator */
+.lof-navigator-wapper{
+  background: url(../images/bg-navigation.png);
+  width:920px;
+  height: 150px;
+  position: relative;
+  left:0;top:0;
+  margin:auto;
+  margin:35px 0;
+}
+
+.lof-navigator-outer{
+  position:relative;
+  z-index:100;
+  height:100px;
+  margin:20px 0 0;
+  width:820px !important;
+  left:50px;
+  overflow:hidden;
+  color:#FFF;
+  //float:left
+}
+ul.lof-navigator{
+  top:0;
+  padding:0;
+  margin:0;
+  position:absolute;
+  width:100%;
+}
+ul.lof-navigator li{
+  cursor:hand;
+  cursor:pointer;
+  list-style:none;
+  padding:0;
+  overflow:hidden;
+  margin:0;
+  float:left;
+  display:block;
+  text-align:center;
+}
+ul.lof-navigator li img{
+  border:none;
+  opacity: .5;
+  @include single-transition(all,.4s,ease,0s);
+}
+ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
+  opacity: 1;
+  border:none;
+}
+.lof-navigator-wapper .lof-next,  .lof-navigator-wapper .lof-previous{
+  display:block;
+  width:23px;
+  height:34px;
+  //color:#FFF;
+  cursor:pointer;
+  position: absolute;
+  margin-top: -17px;
+  top:50%;
+}
+.lof-navigator-wapper .lof-next {
+  text-indent:-999px;
+  left:10px;
+  margin-right:5px;
+  background:url(../images/prev.png) no-repeat;
+}
+.lof-navigator-wapper .lof-previous {
+  text-indent:-999px;
+  right:10px;
+  margin-left:5px;
+  background:url(../images/next.png) no-repeat;
+}
+
+//metcast
+.gsInformer{
+  //width: 825px;
+  //height: 100px;
+  //margin:20px auto;
+  background-color: #1a1a1a;
+  @include box-shadow(0 0 10px rgba(0,0,0,.75));
+  //position: relative;
+  //padding: 0 30px 0 115px;
+  color:#dae2e8;
+}
+//player styles
+.flowplayer {width: 746px; height: 555px;}
+
+//metcast
+.metcast__content{@include vCtr;}
+
+//socialWeb
+.socialWeb{
+  width:824px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  position: relative;
+  &:before{
+    @include pseudoBlockAbs;
+    background: url(../images/socialWeb__border.jpg);
+    height: 5px;
+    width:100%;
+    bottom:0;
+    left:0;
+  }
+}
+
+//copyright
+.copyright{
+  display: block;
+  width:825px;
+  margin:0 auto;
+  padding:15px 0;
+  font-size: 12px;
+  span{display: block; text-align: right;}
+}
+
+.bg-tv{
+  background: url(../images/bg-tv.png);
+  width:925px;height: 885px;
+  position: relative;
+}
+.tv__controls{
+  position: absolute;
+  right: 25px;
+  bottom:0;
+  height: 170px;
+  width:320px;
+}
+.tv__quality{
+  position: absolute;
+  left:0;top:0;
+}
+.tv__quality__item{
+  display: block;
+  width:50px; height: 15px;
+  position: absolute;
+  &.item-1{top:5px;left:15px;}
+  &.item-2{top:46px;left:0px;}
+  &.item-3{top:82px;left:17px;}
+}
+#tv__quality__indicator{
+  width:99px; height: 84px;
+  position: absolute;
+  top:10px;
+  left:50px;
+  &.stage-1{@include indicator_stages-sprite(stage-1);}
+  &.stage-2{@include indicator_stages-sprite(stage-2);}
+  &.stage-3{@include indicator_stages-sprite(stage-3);}
+}
+.tv__contols__volume{
+  position: absolute;
+  //background: red;
+  bottom:60px;
+  right:25px;
+  input{position: absolute;left:-10000px;}
+  width:43px; height: 34px;
+  @include indicator_stages-sprite(on);
+  &.active {@include indicator_stages-sprite(off);}
+}
+//debug
+//* { outline: 2px dotted red; }
+//* * { outline: 2px dotted green; }
+//* * * { outline: 2px dotted orange; }
+//* * * * { outline: 2px dotted blue; }
+//* * * * * { outline: 1px solid red; }
+//* * * * * * { outline: 1px solid green; }
+//* * * * * * * { outline: 1px solid orange; }
+//* * * * * * * * { outline: 1px solid blue; }
