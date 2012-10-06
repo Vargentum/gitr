@@ -26,7 +26,7 @@
 *{@include box-sizing(border-box);}
 input[type=search]{@include box-sizing(border-box);}
 
-@import "sprites/indicator_stages/*.png";
+@import "sprites/controls/*.png";
 /*VARIABLES
 --------------------------------------------*/
 //set liks color here
@@ -41,7 +41,7 @@ $baseFontColor: #fff;
 $baseFontSize:14px;
 $baseLineHeight: 1.4;
 //layout params-----------------------
-$baseWidth: 920px;
+$baseWidth: 1000px;
 
 /*HELPER CLASSES
 ---------------------------------------------------------*/
@@ -199,13 +199,8 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 
 //metcast
 .gsInformer{
-  //width: 825px;
-  //height: 100px;
-  //margin:20px auto;
   background-color: #1a1a1a;
   @include box-shadow(0 0 10px rgba(0,0,0,.75));
-  //position: relative;
-  //padding: 0 30px 0 115px;
   color:#dae2e8;
 }
 //player styles
@@ -242,47 +237,177 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 
 .bg-tv{
   background: url(../images/bg-tv.png);
-  width:925px;height: 885px;
+  width:923px;height: 885px;
   position: relative;
+  margin: 0 auto 70px;
+  &:before{
+    @include pseudoBlockAbs;
+    background: url(../images/tv__shadow.png);
+    width:1040px;
+    height: 130px;
+    bottom:-55px;
+    left:50%;
+    margin-left: -530px;
+    z-index: -1;
+  }
 }
 .tv__controls{
   position: absolute;
-  right: 25px;
-  bottom:0;
-  height: 170px;
-  width:320px;
+  right: 60px;
+  bottom:60px;
+  height: 110px;
+  width:485px;
 }
 .tv__quality{
   position: absolute;
+  top:0;
+  left:170px;
+  width:150px;
+  height: inherit;
+}
+.tv__controls__title{
+  position: absolute;
   left:0;top:0;
+  width:170px;
+  height: 120px;
+  &:before{
+    @include pseudoBlockAbs;
+    @include controls-sprite(main_title);
+    width:88px; height: 20px;
+    left:50%; top:50%;
+    margin-top: -11px;
+    margin-left: -44px;
+  }
 }
 .tv__quality__item{
   display: block;
-  width:50px; height: 15px;
   position: absolute;
-  &.item-1{top:5px;left:15px;}
-  &.item-2{top:46px;left:0px;}
-  &.item-3{top:82px;left:17px;}
+  &.item-1{width: 44px; height: 12px; top:5px;left:15px;@include controls-sprite(title_stage-1);}
+  &.item-2{width: 41px; height: 14px; top:50px;left:0px;@include controls-sprite(title_stage-2);}
+  &.item-3{width: 38px; height: 13px; top:90px;left:17px;@include controls-sprite(title_stage-3);}
 }
 #tv__quality__indicator{
   width:99px; height: 84px;
   position: absolute;
   top:10px;
   left:50px;
-  &.stage-1{@include indicator_stages-sprite(stage-1);}
-  &.stage-2{@include indicator_stages-sprite(stage-2);}
-  &.stage-3{@include indicator_stages-sprite(stage-3);}
+  &.stage-1{@include controls-sprite(stage-1);}
+  &.stage-2{@include controls-sprite(stage-2);}
+  &.stage-3{@include controls-sprite(stage-3);}
 }
-.tv__contols__volume{
+/*tv__controls__volume indicator*/
+.tv__controls__volume{
+  display: block;
   position: absolute;
-  //background: red;
-  bottom:60px;
-  right:25px;
-  input{position: absolute;left:-10000px;}
-  width:43px; height: 34px;
-  @include indicator_stages-sprite(on);
-  &.active {@include indicator_stages-sprite(off);}
+  right:10px;
+  top:0;
+  width:115px; height: 65px;
+  .title{
+    display: block;
+    @include controls-sprite(title_volumeRange);
+    width:61px; height: 13px;
+  }
 }
+/*full size view*/
+.tv__contols__fullSize{
+  position: absolute;
+  bottom:0;
+  right:65px;
+  width:60px; height: 34px;
+  &:before{
+    @include pseudoBlockAbs;
+    top:0;right:0;
+    width:43px; height: 34px;
+    @include controls-sprite(on);
+  }
+  &.active:before {@include controls-sprite(off);}
+  .title{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:50%;
+    margin-top: -7px;
+    width:19px; height: 15px;
+    @include controls-sprite(title_fullsize);
+    float: left;
+  }
+}
+/*on off volume*/
+.tv__contols__volumeOff{
+  position: absolute;
+  bottom:0;right:0;
+  width:60px; height: 34px;
+  &:before{
+    @include pseudoBlockAbs;
+    top:0;right:0;
+    width:43px; height: 34px;
+    @include controls-sprite(on);
+  }
+  &.active:before {@include controls-sprite(off);}
+  .title{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:50%;
+    @include controls-sprite(title_volume-on);
+    width:14px; height: 18px;
+    margin-top: -9px;
+  }
+  &.active .title{
+    @include controls-sprite(title_volume-off);
+    width:17px; height: 18px;
+  }
+}
+/* slider root element */
+.slider {
+  @include controls-sprite(rangeTrack);
+  height:36px;
+  position:relative;
+  cursor:pointer;
+  width:113px;
+  margin-top:10px;
+}
+
+/* progress bar (enabled with progress: true) */
+.progress {
+  height:9px;
+  background-color:#C5FF00;
+  display:none;
+  opacity:0.6;
+}
+
+/* drag handle */
+.handle {
+  @include controls-sprite(rangeDrag);
+  @include box-shadow(0 2px 7px #000);
+  width: 6px;
+  height: 41px;
+  position:absolute;
+  top:50%;
+  margin-top: -20px;
+  display:block;
+  cursor:move;
+}
+
+/* the input field */
+.range {
+  border:1px inset #ddd;
+  float:left;
+  font-size:20px;
+  margin:0 0 0 15px;
+  padding:3px 0;
+  text-align:center;
+  width:50px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  display: none;
+}
+
+
+
+
+
+
 //debug
 //* { outline: 2px dotted red; }
 //* * { outline: 2px dotted green; }

@@ -1,4 +1,4 @@
-/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -481,9 +481,9 @@ input[type=search] {
   box-sizing: border-box;
 }
 
-/* line 76, sprites/indicator_stages/*.png */
-.indicator_stages-sprite, #tv__quality__indicator.stage-1, #tv__quality__indicator.stage-2, #tv__quality__indicator.stage-3, .tv__contols__volume, .tv__contols__volume.active {
-  background: url('/images/sprites/indicator_stages-s3068220087.png') no-repeat;
+/* line 154, sprites/controls/*.png */
+.controls-sprite, .tv__controls__title:before, .tv__quality__item.item-1, .tv__quality__item.item-2, .tv__quality__item.item-3, #tv__quality__indicator.stage-1, #tv__quality__indicator.stage-2, #tv__quality__indicator.stage-3, .tv__controls__volume .title, .tv__contols__fullSize:before, .tv__contols__fullSize.active:before, .tv__contols__fullSize .title, .tv__contols__volumeOff:before, .tv__contols__volumeOff.active:before, .tv__contols__volumeOff .title, .tv__contols__volumeOff.active .title, .slider, .handle {
+  background: url('/images/sprites/controls-s0373ddd9b5.png') no-repeat;
 }
 
 /*VARIABLES
@@ -529,7 +529,7 @@ body .l-baseWrap {
   height: auto !important;
   height: 100%;
   margin: 0 auto;
-  width: 920px;
+  width: 1000px;
 }
 
 /* line 106, ../sass/screen.scss */
@@ -538,23 +538,22 @@ a {
   -webkit-transition: all 0.4s ease;
   -webkit-transition-delay: 0s;
   -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
-/* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 18, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
   color: #b53228;
 }
-/* line 21, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 21, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:focus {
   color: #b53228;
 }
-/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #b53228;
 }
-/* line 27, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+/* line 27, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #b53228;
 }
@@ -648,7 +647,6 @@ ul.lof-navigator li img {
   -webkit-transition: all 0.4s ease;
   -webkit-transition-delay: 0s;
   -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
@@ -695,27 +693,27 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   color: #dae2e8;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .flowplayer {
   width: 746px;
   height: 555px;
 }
 
-/* line 215, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .metcast__content {
   display: table-cell;
   height: inherit;
   vertical-align: middle;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .socialWeb {
   width: 824px;
   margin: 0 auto;
   padding-bottom: 5px;
   position: relative;
 }
-/* line 223, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .socialWeb:before {
   content: '';
   display: block;
@@ -727,7 +725,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   left: 0;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .copyright {
   display: block;
   width: 825px;
@@ -735,60 +733,105 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   padding: 15px 0;
   font-size: 12px;
 }
-/* line 240, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .copyright span {
   display: block;
   text-align: right;
 }
 
-/* line 243, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .bg-tv {
   background: url(../images/bg-tv.png);
-  width: 925px;
+  width: 923px;
   height: 885px;
   position: relative;
+  margin: 0 auto 70px;
+}
+/* line 243, ../sass/screen.scss */
+.bg-tv:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: url(../images/tv__shadow.png);
+  width: 1040px;
+  height: 130px;
+  bottom: -55px;
+  left: 50%;
+  margin-left: -530px;
+  z-index: -1;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .tv__controls {
   position: absolute;
-  right: 25px;
-  bottom: 0;
-  height: 170px;
-  width: 320px;
+  right: 60px;
+  bottom: 60px;
+  height: 110px;
+  width: 485px;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .tv__quality {
+  position: absolute;
+  top: 0;
+  left: 170px;
+  width: 150px;
+  height: inherit;
+}
+
+/* line 268, ../sass/screen.scss */
+.tv__controls__title {
   position: absolute;
   left: 0;
   top: 0;
+  width: 170px;
+  height: 120px;
+}
+/* line 273, ../sass/screen.scss */
+.tv__controls__title:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-position: 0 -369px;
+  width: 88px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+  margin-top: -11px;
+  margin-left: -44px;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .tv__quality__item {
   display: block;
-  width: 50px;
-  height: 15px;
   position: absolute;
 }
-/* line 263, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .tv__quality__item.item-1 {
+  width: 44px;
+  height: 12px;
   top: 5px;
   left: 15px;
+  background-position: 0 -416px;
 }
-/* line 264, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .tv__quality__item.item-2 {
-  top: 46px;
+  width: 41px;
+  height: 14px;
+  top: 50px;
   left: 0px;
+  background-position: 0 -402px;
 }
-/* line 265, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .tv__quality__item.item-3 {
-  top: 82px;
+  width: 38px;
+  height: 13px;
+  top: 90px;
   left: 17px;
+  background-position: 0 -389px;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 #tv__quality__indicator {
   width: 99px;
   height: 84px;
@@ -796,34 +839,163 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   top: 10px;
   left: 50px;
 }
-/* line 272, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #tv__quality__indicator.stage-1 {
   background-position: 0 0;
 }
-/* line 273, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #tv__quality__indicator.stage-2 {
   background-position: 0 -168px;
 }
-/* line 274, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #tv__quality__indicator.stage-3 {
   background-position: 0 -84px;
 }
 
-/* line 276, ../sass/screen.scss */
-.tv__contols__volume {
+/*tv__controls__volume indicator*/
+/* line 299, ../sass/screen.scss */
+.tv__controls__volume {
+  display: block;
   position: absolute;
-  bottom: 60px;
-  right: 25px;
+  right: 10px;
+  top: 0;
+  width: 115px;
+  height: 65px;
+}
+/* line 305, ../sass/screen.scss */
+.tv__controls__volume .title {
+  display: block;
+  background-position: 0 -356px;
+  width: 61px;
+  height: 13px;
+}
+
+/*full size view*/
+/* line 312, ../sass/screen.scss */
+.tv__contols__fullSize {
+  position: absolute;
+  bottom: 0;
+  right: 65px;
+  width: 60px;
+  height: 34px;
+}
+/* line 317, ../sass/screen.scss */
+.tv__contols__fullSize:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 43px;
   height: 34px;
   background-position: 0 -286px;
 }
-/* line 281, ../sass/screen.scss */
-.tv__contols__volume input {
-  position: absolute;
-  left: -10000px;
-}
-/* line 284, ../sass/screen.scss */
-.tv__contols__volume.active {
+/* line 323, ../sass/screen.scss */
+.tv__contols__fullSize.active:before {
   background-position: 0 -252px;
+}
+/* line 324, ../sass/screen.scss */
+.tv__contols__fullSize .title {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+  width: 19px;
+  height: 15px;
+  background-position: 0 -446px;
+  float: left;
+}
+
+/*on off volume*/
+/* line 336, ../sass/screen.scss */
+.tv__contols__volumeOff {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 34px;
+}
+/* line 340, ../sass/screen.scss */
+.tv__contols__volumeOff:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 43px;
+  height: 34px;
+  background-position: 0 -286px;
+}
+/* line 346, ../sass/screen.scss */
+.tv__contols__volumeOff.active:before {
+  background-position: 0 -252px;
+}
+/* line 347, ../sass/screen.scss */
+.tv__contols__volumeOff .title {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-position: 0 -502px;
+  width: 14px;
+  height: 18px;
+  margin-top: -9px;
+}
+/* line 356, ../sass/screen.scss */
+.tv__contols__volumeOff.active .title {
+  background-position: 0 -428px;
+  width: 17px;
+  height: 18px;
+}
+
+/* slider root element */
+/* line 362, ../sass/screen.scss */
+.slider {
+  background-position: 0 -320px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  width: 113px;
+  margin-top: 10px;
+}
+
+/* progress bar (enabled with progress: true) */
+/* line 372, ../sass/screen.scss */
+.progress {
+  height: 9px;
+  background-color: #C5FF00;
+  display: none;
+  opacity: 0.6;
+}
+
+/* drag handle */
+/* line 380, ../sass/screen.scss */
+.handle {
+  background-position: 0 -461px;
+  -webkit-box-shadow: 0 2px 7px black;
+  -moz-box-shadow: 0 2px 7px black;
+  box-shadow: 0 2px 7px black;
+  width: 6px;
+  height: 41px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  display: block;
+  cursor: move;
+}
+
+/* the input field */
+/* line 393, ../sass/screen.scss */
+.range {
+  border: 1px inset #ddd;
+  float: left;
+  font-size: 20px;
+  margin: 0 0 0 15px;
+  padding: 3px 0;
+  text-align: center;
+  width: 50px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: none;
 }

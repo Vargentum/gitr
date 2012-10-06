@@ -37,13 +37,6 @@ $(function(){
     var items = $('.tv__quality__item');
     $('.tv__quality__item').each(function(){
         $(this).click(function(){
-//            for(var i=1; i>=items.length; i++){
-//                if($(this).hasClass("'item-'+[i]")){
-//                    $('#tv__quality__indicator').removeClass().addClass("'stage-'+[i]");
-////                    return false;
-//                }
-//                else{return false;}
-//            }
             if($(this).hasClass('item-1')){
                 $('#tv__quality__indicator').removeClass().addClass('stage-1');
                 return false;
@@ -59,19 +52,11 @@ $(function(){
             else{return false;}
         });
     });
-});
-$('.tv__contols__volume').click(function(){
-    // Пишем условие: если вложенный в див чекбокс отмечен
-    if( $(this).find('input').is(':checked') ) {
-        // то снимаем активность с дива
-        $(this).removeClass('active');
-        // и удаляем атрибут checked (делаем чекбокс не отмеченным)
-        $(this).find('input').removeAttr('checked');
-        // если же чекбокс не отмечен, то
-    } else {
-        // добавляем класс активности диву
-        $(this).addClass('active');
-        // добавляем атрибут checked чекбоксу
-        $(this).find('input').attr('checked', true);
-    }
+//    pseudoCheckboxes
+    $('.tv__contols__fullSize, .tv__contols__volumeOff').click(function(){
+        $(this).toggleClass('active');
+        return false;
+    });
+//    rangeInput
+    $(":range").rangeinput();
 });

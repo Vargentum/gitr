@@ -98,16 +98,28 @@
             </div><!--end lof-main-outer-->
 
             <div class="tv__controls">
+                <!--title-->
                 <header class="tv__controls__title ir">Гитр</header>
-                <label class="tv__contols__volume">
-                    <span class="invisible">ЗВУК ВКЛ/ВЫКЛ</span>
-                    <input type="checkbox">
-                </label>
+                <!--quality stages-->
                 <div class="tv__quality">
-                    <a href="#" class="tv__quality__item item-1"><span class="ir">Хорошее</span> </a>
-                    <a href="#" class="tv__quality__item item-2"><span class="ir">Среднее</span> </a>
-                    <a href="#" class="tv__quality__item item-3"><span class="ir">Низкое</span> </a>
+                    <a href="#" class="tv__quality__item item-1"><span class="ir">Хорошее</span></a>
+                    <a href="#" class="tv__quality__item item-2"><span class="ir">Среднее</span></a>
+                    <a href="#" class="tv__quality__item item-3"><span class="ir">Низкое</span></a>
                     <div id="tv__quality__indicator" class="stage-2"></div>
+                </div>
+                <!--volume range-->
+                <label class="tv__controls__volume">
+                    <span class="title"></span>
+                    <input type="range" min="1" max="100" value="30">
+                </label>
+                <!--fullsize control-->
+                <a href="#" class="tv__contols__fullSize">
+                    <span class="title"></span>
+                </a>
+                <!--volume on/off conroll-->
+                <label class="tv__contols__volumeOff">
+                    <span class="title"></span>
+                </label>
                 </div>
             </div>
         </div><!--end tv_wrap-->
@@ -155,9 +167,9 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+<script src="js/plugins/jqueryTools-rangeInput.js"></script>
 <script type="text/javascript" src="//vk.com/js/api/openapi.js?52"></script>
 <script src="http://www.gismeteo.ru/ajax/getInformer/?hash=tUCqG2S8" type="text/javascript"></script>
-
 <script type="text/javascript" src="js/plugins/jquery.easing.js"></script>
 <script type="text/javascript" src="js/plugins/slider.js"></script>
 <script type="text/javascript" src="js/plugins/flowplayer.min.js"></script>
