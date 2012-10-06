@@ -602,11 +602,10 @@ ul.lof-main-wapper li img {
   position: relative;
   left: 0;
   top: 0;
-  margin: auto;
-  margin: 35px 0;
+  margin: 35px auto;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .lof-navigator-outer {
   position: relative;
   z-index: 100;
@@ -618,7 +617,7 @@ ul.lof-main-wapper li img {
   color: #FFF;
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 ul.lof-navigator {
   top: 0;
   padding: 0;
@@ -627,7 +626,7 @@ ul.lof-navigator {
   width: 100%;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 ul.lof-navigator li {
   cursor: hand;
   cursor: pointer;
@@ -640,7 +639,7 @@ ul.lof-navigator li {
   text-align: center;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 ul.lof-navigator li img {
   border: none;
   opacity: .5;
@@ -651,13 +650,13 @@ ul.lof-navigator li img {
   transition: all 0.4s ease 0s;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   opacity: 1;
   border: none;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .lof-navigator-wapper .lof-next, .lof-navigator-wapper .lof-previous {
   display: block;
   width: 23px;
@@ -668,7 +667,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   top: 50%;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .lof-navigator-wapper .lof-next {
   text-indent: -999px;
   left: 10px;
@@ -676,7 +675,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   background: url(../images/prev.png) no-repeat;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .lof-navigator-wapper .lof-previous {
   text-indent: -999px;
   right: 10px;
@@ -684,7 +683,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   background: url(../images/next.png) no-repeat;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .gsInformer {
   background-color: #1a1a1a;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
@@ -693,27 +692,27 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   color: #dae2e8;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 .flowplayer {
   width: 746px;
   height: 555px;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .metcast__content {
   display: table-cell;
   height: inherit;
   vertical-align: middle;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .socialWeb {
   width: 824px;
   margin: 0 auto;
   padding-bottom: 5px;
   position: relative;
 }
-/* line 218, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .socialWeb:before {
   content: '';
   display: block;
@@ -725,7 +724,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   left: 0;
 }
 
-/* line 229, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .copyright {
   display: block;
   width: 825px;
@@ -733,13 +732,13 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   padding: 15px 0;
   font-size: 12px;
 }
-/* line 235, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .copyright span {
   display: block;
   text-align: right;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .bg-tv {
   background: url(../images/bg-tv.png);
   width: 923px;
@@ -747,7 +746,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   position: relative;
   margin: 0 auto 70px;
 }
-/* line 243, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .bg-tv:before {
   content: '';
   display: block;
@@ -761,7 +760,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   z-index: -1;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .tv__controls {
   position: absolute;
   right: 60px;
@@ -770,7 +769,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   width: 485px;
 }
 
-/* line 261, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .tv__quality {
   position: absolute;
   top: 0;
@@ -779,7 +778,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   height: inherit;
 }
 
-/* line 268, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .tv__controls__title {
   position: absolute;
   left: 0;
@@ -787,7 +786,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   width: 170px;
   height: 120px;
 }
-/* line 273, ../sass/screen.scss */
+/* line 272, ../sass/screen.scss */
 .tv__controls__title:before {
   content: '';
   display: block;
@@ -801,12 +800,12 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   margin-left: -44px;
 }
 
-/* line 282, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .tv__quality__item {
   display: block;
   position: absolute;
 }
-/* line 285, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .tv__quality__item.item-1 {
   width: 44px;
   height: 12px;
@@ -814,7 +813,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   left: 15px;
   background-position: 0 -416px;
 }
-/* line 286, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .tv__quality__item.item-2 {
   width: 41px;
   height: 14px;
@@ -822,7 +821,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   left: 0px;
   background-position: 0 -402px;
 }
-/* line 287, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .tv__quality__item.item-3 {
   width: 38px;
   height: 13px;
@@ -831,7 +830,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   background-position: 0 -389px;
 }
 
-/* line 289, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 #tv__quality__indicator {
   width: 99px;
   height: 84px;
@@ -839,21 +838,21 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   top: 10px;
   left: 50px;
 }
-/* line 294, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 #tv__quality__indicator.stage-1 {
   background-position: 0 0;
 }
-/* line 295, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #tv__quality__indicator.stage-2 {
   background-position: 0 -168px;
 }
-/* line 296, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 #tv__quality__indicator.stage-3 {
   background-position: 0 -84px;
 }
 
 /*tv__controls__volume indicator*/
-/* line 299, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .tv__controls__volume {
   display: block;
   position: absolute;
@@ -862,7 +861,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   width: 115px;
   height: 65px;
 }
-/* line 305, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 .tv__controls__volume .title {
   display: block;
   background-position: 0 -356px;
@@ -871,7 +870,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 }
 
 /*full size view*/
-/* line 312, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .tv__contols__fullSize {
   position: absolute;
   bottom: 0;
@@ -879,7 +878,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   width: 60px;
   height: 34px;
 }
-/* line 317, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .tv__contols__fullSize:before {
   content: '';
   display: block;
@@ -890,11 +889,11 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   height: 34px;
   background-position: 0 -286px;
 }
-/* line 323, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .tv__contols__fullSize.active:before {
   background-position: 0 -252px;
 }
-/* line 324, ../sass/screen.scss */
+/* line 323, ../sass/screen.scss */
 .tv__contols__fullSize .title {
   display: block;
   position: absolute;
@@ -908,7 +907,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 }
 
 /*on off volume*/
-/* line 336, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .tv__contols__volumeOff {
   position: absolute;
   bottom: 0;
@@ -916,7 +915,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   width: 60px;
   height: 34px;
 }
-/* line 340, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .tv__contols__volumeOff:before {
   content: '';
   display: block;
@@ -927,11 +926,11 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   height: 34px;
   background-position: 0 -286px;
 }
-/* line 346, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .tv__contols__volumeOff.active:before {
   background-position: 0 -252px;
 }
-/* line 347, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .tv__contols__volumeOff .title {
   display: block;
   position: absolute;
@@ -942,7 +941,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
   height: 18px;
   margin-top: -9px;
 }
-/* line 356, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .tv__contols__volumeOff.active .title {
   background-position: 0 -428px;
   width: 17px;
@@ -950,7 +949,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 }
 
 /* slider root element */
-/* line 362, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .slider {
   background-position: 0 -320px;
   height: 36px;
@@ -961,7 +960,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 }
 
 /* progress bar (enabled with progress: true) */
-/* line 372, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .progress {
   height: 9px;
   background-color: #C5FF00;
@@ -970,7 +969,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 }
 
 /* drag handle */
-/* line 380, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .handle {
   background-position: 0 -461px;
   -webkit-box-shadow: 0 2px 7px black;
@@ -986,7 +985,7 @@ ul.lof-navigator li.active img, ul.lof-navigator li:hover img {
 }
 
 /* the input field */
-/* line 393, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .range {
   border: 1px inset #ddd;
   float: left;
